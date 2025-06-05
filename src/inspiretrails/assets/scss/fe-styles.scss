@@ -1397,11 +1397,11 @@ section {
     }
 
     /* Khi checkbox được chọn */
-    .ticket-checkbox:checked + .checkmark {
+    .ticket-checkbox:checked+.checkmark {
       opacity: 1;
     }
 
-    .ticket-checkbox:checked ~ & {
+    .ticket-checkbox:checked~& {
       background-color: #ffc107;
       border: 2px solid #000;
     }
@@ -1746,8 +1746,7 @@ section {
           display: flex;
           align-items: center;
           margin-bottom: 5px;
-          background: url("../images/product-details/i-check-black.svg")
-            no-repeat left center;
+          background: url("../images/product-details/i-check-black.svg") no-repeat left center;
           padding-left: 30px;
           width: 50%;
         }
@@ -2099,6 +2098,7 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
+
   .packing-items,
   .note-items {
     font-size: 14px;
@@ -4482,8 +4482,7 @@ section {
 
 .weekend-bus-section {
   padding: 0 0 400px;
-  background: url("../images/about-us/bg-weekend-bus.jpg") center top/cover
-    no-repeat;
+  background: url("../images/about-us/bg-weekend-bus.jpg") center top/cover no-repeat;
   min-height: 600px;
   position: relative;
 
@@ -4520,6 +4519,7 @@ section {
   }
 
   @media (max-width: 1200px) {
+
     &::before,
     &::after {
       display: none;
@@ -4967,8 +4967,7 @@ section {
 }
 
 .inspire-footer {
-  background: #181818 url("../images/about-us/topo-footer.svg") center/cover
-    no-repeat;
+  background: #181818 url("../images/about-us/topo-footer.svg") center/cover no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -5393,6 +5392,7 @@ section {
 
 /* Responsive tối ưu mobile */
 @media (max-width: 992px) {
+
   .extrim-img-wrapper,
   .extrim-img-wrapper .extrim-img {
     min-height: 200px;
@@ -5460,6 +5460,7 @@ section {
   z-index: 1;
   padding-top: 60px;
   min-height: 800px;
+
   @media (max-width: 992px) {
     padding-top: 30px;
     padding-bottom: 180px;
@@ -5517,6 +5518,7 @@ section {
   }
 
   @media (max-width: 768px) {
+
     .faq-bg-mountain,
     .faq-bg-runner {
       width: 65vw !important;
@@ -5632,14 +5634,14 @@ section {
   padding: 0 25px 300px;
   text-align: center;
   overflow: hidden;
-  background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom / cover
-    no-repeat;
+  background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom / cover no-repeat;
   background-size: 100%;
 
   h2 {
     font-size: 35px;
     font-weight: 800;
     margin-bottom: 35px;
+
     span {
       color: #fdb913;
     }
@@ -5678,6 +5680,7 @@ section {
     width: 100%;
     margin: 0 auto;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -5689,25 +5692,32 @@ section {
       z-index: 2;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
+
       @media (max-width: 1700px) {
         width: 206px;
       }
+
       @media (max-width: 1368px) {
         width: 135px;
       }
+
       @media (max-width: 1366px) {
         width: 131px;
       }
+
       @media (max-width: 1180px) {
         width: 84px;
       }
+
       @media (max-width: 1024px) {
         width: 48px;
       }
+
       @media (max-width: 912px) {
         display: none;
       }
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -5719,6 +5729,7 @@ section {
       z-index: 2;
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
+
       @media (max-width: 912px) {
         display: none;
       }
@@ -5731,13 +5742,15 @@ section {
 
   .slick-track {
     left: -190px;
+
     @media (max-width: 992px) {
       left: 0;
     }
   }
 
   .slick-slide {
-    aspect-ratio: 3/4; /* Hoặc 4/5, 2/3, 16/9 tuỳ mục đích */
+    aspect-ratio: 3/4;
+    /* Hoặc 4/5, 2/3, 16/9 tuỳ mục đích */
     width: 90%;
     margin: 0 auto;
     border-radius: 20px;
@@ -5791,6 +5804,310 @@ section {
     .slick-next {
       width: 40px;
       height: 40px;
+    }
+  }
+}
+
+.banner-landing-page {
+  padding: 87px 0 0;
+
+  @media (max-width: 440px) {
+    padding: 59px 0 0;
+
+  }
+}
+
+.section-weekend-event {
+  padding: 50px 0;
+
+  .weekend-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 18px;
+
+    .emoji {
+      font-size: 2.3rem;
+      line-height: 1;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+  }
+
+  .weekend-desc {
+    color: #232323;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 1.7rem;
+
+    b {
+      font-weight: 800;
+      color: #151515;
+    }
+  }
+
+  .weekend-time {
+    margin-top: 8px;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+
+    .emoji {
+      font-size: 2.1rem;
+      margin-right: 4px;
+    }
+
+    .time-title {
+      font-weight: 700;
+      color: #151515;
+      margin-right: 5px;
+    }
+
+    .time-main {
+      color: #000;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      max-width: 98vw;
+    }
+
+    .weekend-title .main-title {
+      font-size: 1.35rem;
+    }
+
+    .weekend-time {
+      font-size: 1.1rem;
+
+      .time-main {
+        font-size: 1.1rem;
+      }
+    }
+
+    .weekend-desc {
+      font-size: 1rem;
+    }
+  }
+}
+
+.section-join {
+  padding: 0;
+}
+
+.section-join-guide {
+  padding: 50px 0;
+
+  .join-title {
+    font-size: 35px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .emoji {
+      font-size: 16px;
+      color: #fdb913;
+      margin-right: 4px;
+    }
+  }
+
+  .join-list {
+    font-size: 20px;
+    color: #232323;
+    line-height: 1.65;
+    font-weight: 400;
+    counter-reset: my-counter;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    li {
+      margin-bottom: 18px;
+      font-size: 20px;
+
+      b {
+        font-weight: 700;
+      }
+    }
+
+    ul {
+      list-style: circle inside;
+      margin-top: 6px;
+      margin-bottom: 0;
+      padding-left: 10px;
+
+      li {
+        margin-bottom: 6px;
+        font-size: 1em;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      max-width: 99vw;
+    }
+
+    .join-title {
+      font-size: 26px;
+    }
+
+    .join-list {
+      font-size: 1rem;
+    }
+  }
+}
+
+.section-prize-rules {
+  padding: 50px 0;
+
+  .prize-block,
+  .rules-block {
+    // display: flex;
+    // align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+
+    .emoji {
+      font-size: 1rem;
+      margin-top: 2px;
+      flex-shrink: 0;
+      min-width: 1.7em;
+      text-align: center;
+    }
+
+    .block-title {
+      font-size: 35px;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 2px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .prize-desc {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.62;
+    color: #232323;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    p {
+      margin: 0 0 6px 0;
+    }
+
+    ul {
+      margin: 0 0 4px 2.5em;
+      padding: 0;
+
+      li {
+        margin-bottom: 2px;
+        font-size: 1.1em;
+        list-style: disc;
+        font-weight: 400;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .rules-list {
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.64;
+    color: #232323;
+    margin-top: 2px;
+    margin-left: 1.6em;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 6px;
+      font-size: 1.06em;
+      list-style: disc;
+
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .divider {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 22px 0 16px 0;
+  }
+
+  @media (max-width: 700px) {
+    .container {
+      max-width: 98vw;
+    }
+
+    .prize-block .block-title,
+    .rules-block .block-title {
+      font-size: 26px;
+    }
+
+
+    .prize-desc,
+    .rules-list {
+      font-size: 0.98rem;
+    }
+  }
+}
+
+.section-inspire-slogan {
+  padding: 50px 0;
+  margin: 0 auto 0 auto;
+
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .inspire-slogan {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 auto;
+    color: #181818;
+
+    b {
+      font-weight: 700;
+    }
+
+    .emoji {
+      font-size: 1.4em;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .inspire-slogan {
+      font-size: 1rem;
+      padding: 0 15px;
     }
   }
 }
