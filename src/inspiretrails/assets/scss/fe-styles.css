@@ -3666,7 +3666,7 @@ section {
 }
 
 .weekend-bus-section {
-  padding: 0 0 220px;
+  padding: 0 0 400px;
   background: url("../images/about-us/bg-weekend-bus.jpg") center top/cover no-repeat;
   min-height: 600px;
   position: relative;
@@ -3721,7 +3721,7 @@ section {
 .weekend-bus-section .bus-content {
   position: relative;
   z-index: 20;
-  padding: 20px 0;
+  padding: 100px 0 20px;
 }
 .weekend-bus-section .bus-title {
   color: #fdb913;
@@ -4236,6 +4236,11 @@ section {
     bottom: 0;
   }
 }
+@media (max-width: 1366px) {
+  .banner-conquer-card {
+    height: auto;
+  }
+}
 @media (max-width: 991.98px) {
   .banner-conquer-card .banner-title {
     font-size: 2.3rem;
@@ -4265,176 +4270,6 @@ section {
   }
 }
 
-.section-journey-mark {
-  background: #fff url("../images/about-us/bg-journey-mark.jpg") bottom/cover no-repeat;
-  background-size: 100%;
-  padding: 0 0 300px;
-  position: relative;
-}
-.section-journey-mark h2 {
-  font-size: 35px;
-  font-weight: 800;
-}
-.section-journey-mark .journey-highlight {
-  color: #fdb913;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.section-journey-mark .journey-desc {
-  color: #232323;
-  font-size: 20px;
-  line-height: 1.7;
-  margin-bottom: 2.4rem;
-  margin-top: 0.7rem;
-}
-@media (max-width: 600px) {
-  .section-journey-mark .journey-desc {
-    font-size: 1rem;
-  }
-}
-.section-journey-mark .journey-carousel {
-  margin-top: 50px;
-}
-.section-journey-mark .journey-carousel .slick-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 0;
-  outline: none;
-}
-.section-journey-mark .journey-carousel .slick-list {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-}
-.section-journey-mark .journey-carousel .slick-center .journey-card-img {
-  transform: scale(1.13);
-  z-index: 2;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s;
-}
-.section-journey-mark .journey-carousel .journey-card-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background: #eee;
-  box-shadow: 0 3px 18px 0 rgba(30, 30, 30, 0.08);
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s;
-}
-@media (max-width: 600px) {
-  .section-journey-mark .journey-carousel .journey-card-img {
-    width: 180px;
-    height: 250px;
-    border-radius: 1rem;
-  }
-}
-.section-journey-mark .journey-carousel .slick-arrow {
-  background: transparent;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.12);
-  width: 50px;
-  height: 50px;
-  z-index: 10;
-  top: 46%;
-  transition: background 0.15s, border-color 0.15s;
-}
-.section-journey-mark .journey-carousel .slick-arrow:before {
-  color: #fdb913;
-  font-size: 2rem;
-  opacity: 1;
-}
-.section-journey-mark .journey-carousel .slick-arrow:hover {
-  background: #fdb913;
-  border-color: #fdb913;
-}
-.section-journey-mark .journey-carousel .slick-arrow:hover:before {
-  color: #fff;
-}
-.section-journey-mark .journey-carousel .slick-prev {
-  left: 20px;
-}
-.section-journey-mark .journey-carousel .slick-prev:before {
-  content: url("../images/about-us/slick-prev.svg");
-}
-.section-journey-mark .journey-carousel .slick-next {
-  right: 20px;
-}
-.section-journey-mark .journey-carousel .slick-next:before {
-  content: url("../images/about-us/slick-next.svg");
-}
-@media (max-width: 900px) {
-  .section-journey-mark .journey-carousel .slick-prev {
-    left: -22px;
-  }
-  .section-journey-mark .journey-carousel .slick-next {
-    right: -22px;
-  }
-}
-@media (max-width: 600px) {
-  .section-journey-mark .journey-carousel .slick-prev,
-  .section-journey-mark .journey-carousel .slick-next {
-    width: 32px;
-    height: 32px;
-    left: -16px;
-    right: -16px;
-  }
-  .section-journey-mark .journey-carousel .slick-prev:before,
-  .section-journey-mark .journey-carousel .slick-next:before {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 992px) {
-  .section-journey-mark {
-    padding-bottom: 50px;
-  }
-}
-
-.journey-carousel .slick-slide:not(.slick-center) .journey-card-img {
-  transition: transform 0.35s, opacity 0.22s;
-}
-
-.journey-carousel .slick-slide {
-  position: relative;
-}
-.journey-carousel .slick-slide .journey-card-img {
-  position: relative;
-  z-index: 1;
-  transition: box-shadow 0.2s;
-}
-
-.journey-carousel .slick-slide:not(.slick-center):not(.slick-active) .journey-card-img::after {
-  /* Không làm gì với slide không visible */
-  display: none;
-}
-
-.journey-carousel .slick-slide .journey-card {
-  position: relative;
-  border-radius: 2rem;
-  overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s;
-}
-
-.journey-carousel .slick-slide.is-blur .journey-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 20, 20, 0.46);
-  border-radius: inherit;
-  z-index: 3;
-  pointer-events: none;
-  transition: background 0.3s;
-}
-
-.journey-carousel .slick-slide .journey-card-img {
-  width: 100%;
-}
-
-.journey-carousel .slick-center .journey-card {
-  transform: scale(1.13);
-  z-index: 2;
-  box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.19);
-}
-
 .offer-full-section {
   background: #fff;
   padding: 0;
@@ -4457,7 +4292,6 @@ section {
 .offer-full-section .offer-box {
   background: #f8f4e6;
   border-radius: 2rem;
-  box-shadow: 0 4px 22px 0 rgba(100, 80, 30, 0.07);
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
@@ -4615,7 +4449,6 @@ section {
   background: #f8f4e6;
   border-radius: 2rem;
   min-height: 100%;
-  box-shadow: 0 4px 22px 0 rgba(100, 80, 30, 0.07);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4701,10 +4534,17 @@ section {
 
 .faq-inspire-section {
   background: #fff url("../images/about-us/bg-faq-inspire.jpg") no-repeat bottom;
+  background-size: 100%;
   position: relative;
   z-index: 1;
   padding-top: 60px;
   min-height: 800px;
+}
+@media (max-width: 992px) {
+  .faq-inspire-section {
+    padding-top: 30px;
+    padding-bottom: 180px;
+  }
 }
 
 .faq-title {
@@ -4848,5 +4688,168 @@ section {
   }
   .faq-bottom-quote {
     font-size: 0.98rem;
+  }
+}
+.slick-section {
+  padding: 0 25px 300px;
+  text-align: center;
+  overflow: hidden;
+  background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom/cover no-repeat;
+  background-size: 100%;
+}
+.slick-section h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 35px;
+}
+.slick-section h2 span {
+  color: #fdb913;
+}
+.slick-section p {
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+.slick-section .slick-prev,
+.slick-section .slick-next {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  z-index: 999;
+}
+.slick-section .slick-prev {
+  left: 20px;
+}
+.slick-section .slick-prev:before {
+  content: url("../images/about-us/slick-prev.svg");
+}
+.slick-section .slick-next {
+  right: 20px;
+}
+.slick-section .slick-next:before {
+  content: url("../images/about-us/slick-next.svg");
+}
+.slick-section .slick-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.slick-section .slick-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25px;
+  width: 269px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+@media (max-width: 1700px) {
+  .slick-section .slick-container::before {
+    width: 206px;
+  }
+}
+@media (max-width: 1368px) {
+  .slick-section .slick-container::before {
+    width: 135px;
+  }
+}
+@media (max-width: 1366px) {
+  .slick-section .slick-container::before {
+    width: 131px;
+  }
+}
+@media (max-width: 1180px) {
+  .slick-section .slick-container::before {
+    width: 84px;
+  }
+}
+@media (max-width: 1024px) {
+  .slick-section .slick-container::before {
+    width: 48px;
+  }
+}
+@media (max-width: 912px) {
+  .slick-section .slick-container::before {
+    display: none;
+  }
+}
+.slick-section .slick-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 186px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+@media (max-width: 912px) {
+  .slick-section .slick-container::after {
+    display: none;
+  }
+}
+.slick-section .slick-list {
+  overflow: visible;
+}
+.slick-section .slick-track {
+  left: -190px;
+}
+@media (max-width: 992px) {
+  .slick-section .slick-track {
+    left: 0;
+  }
+}
+.slick-section .slick-slide {
+  aspect-ratio: 3/4; /* Hoặc 4/5, 2/3, 16/9 tuỳ mục đích */
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.slick-section .slick-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 auto;
+}
+.slick-section .slick-wrap {
+  margin: 0 -10px;
+}
+.slick-section .slick-wrap .slick-item {
+  padding: 0 30px;
+}
+.slick-section .slick-wrap .slick-item.slick-center img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slick-section .slick-wrap h2 {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .slick-section {
+    padding: 0 15px 200px;
+  }
+  .slick-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .slick-section p {
+    font-size: 1rem;
+    margin-bottom: 90px;
+  }
+  .slick-section .slick-prev,
+  .slick-section .slick-next {
+    width: 40px;
+    height: 40px;
   }
 }/*# sourceMappingURL=fe-styles.css.map */

@@ -1397,11 +1397,11 @@ section {
     }
 
     /* Khi checkbox được chọn */
-    .ticket-checkbox:checked+.checkmark {
+    .ticket-checkbox:checked + .checkmark {
       opacity: 1;
     }
 
-    .ticket-checkbox:checked~& {
+    .ticket-checkbox:checked ~ & {
       background-color: #ffc107;
       border: 2px solid #000;
     }
@@ -1746,7 +1746,8 @@ section {
           display: flex;
           align-items: center;
           margin-bottom: 5px;
-          background: url("../images/product-details/i-check-black.svg") no-repeat left center;
+          background: url("../images/product-details/i-check-black.svg")
+            no-repeat left center;
           padding-left: 30px;
           width: 50%;
         }
@@ -2098,7 +2099,6 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
-
   .packing-items,
   .note-items {
     font-size: 14px;
@@ -4481,8 +4481,9 @@ section {
 }
 
 .weekend-bus-section {
-  padding: 0 0 220px;
-  background: url("../images/about-us/bg-weekend-bus.jpg") center top/cover no-repeat;
+  padding: 0 0 400px;
+  background: url("../images/about-us/bg-weekend-bus.jpg") center top/cover
+    no-repeat;
   min-height: 600px;
   position: relative;
 
@@ -4519,7 +4520,6 @@ section {
   }
 
   @media (max-width: 1200px) {
-
     &::before,
     &::after {
       display: none;
@@ -4542,7 +4542,7 @@ section {
   .bus-content {
     position: relative;
     z-index: 20;
-    padding: 20px 0;
+    padding: 100px 0 20px;
   }
 
   .bus-title {
@@ -4967,7 +4967,8 @@ section {
 }
 
 .inspire-footer {
-  background: #181818 url("../images/about-us/topo-footer.svg") center/cover no-repeat;
+  background: #181818 url("../images/about-us/topo-footer.svg") center/cover
+    no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
@@ -5138,6 +5139,10 @@ section {
     }
   }
 
+  @media (max-width: 1366px) {
+    height: auto;
+  }
+
   @media (max-width: 991.98px) {
     .banner-title {
       font-size: 2.3rem;
@@ -5172,208 +5177,6 @@ section {
   }
 }
 
-.section-journey-mark {
-  background: #fff url("../images/about-us/bg-journey-mark.jpg") bottom/cover no-repeat;
-  background-size: 100%;
-  padding: 0 0 300px;
-  position: relative;
-
-  h2 {
-    font-size: 35px;
-    font-weight: 800;
-  }
-
-  .journey-highlight {
-    color: #fdb913;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-
-  .journey-desc {
-    color: #232323;
-    font-size: 20px;
-    line-height: 1.7;
-    margin-bottom: 2.4rem;
-    margin-top: 0.7rem;
-
-    @media (max-width: 600px) {
-      font-size: 1rem;
-    }
-  }
-
-  .journey-carousel {
-    margin-top: 50px;
-
-    .slick-slide {
-      display: flex !important;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem 0;
-      outline: none;
-    }
-
-    .slick-list {
-      padding-top: 50px !important;
-      padding-bottom: 50px !important;
-    }
-
-    .slick-center {
-      .journey-card-img {
-        transform: scale(1.13);
-        // box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.19);
-        z-index: 2;
-        transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-          box-shadow 0.22s;
-      }
-    }
-
-    .journey-card-img {
-      border-radius: 2rem;
-      width: 90%;
-      height: auto;
-      object-fit: cover;
-      background: #eee;
-      box-shadow: 0 3px 18px 0 rgba(30, 30, 30, 0.08);
-      transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
-        box-shadow 0.22s;
-
-      @media (max-width: 600px) {
-        width: 180px;
-        height: 250px;
-        border-radius: 1rem;
-      }
-    }
-
-    .slick-arrow {
-      background: transparent;
-      border-radius: 50%;
-      box-shadow: 0 2px 10px 0 rgba(50, 50, 50, 0.12);
-      width: 50px;
-      height: 50px;
-      z-index: 10;
-      top: 46%;
-      transition: background 0.15s, border-color 0.15s;
-
-      &:before {
-        color: #fdb913;
-        font-size: 2rem;
-        opacity: 1;
-      }
-
-      &:hover {
-        background: #fdb913;
-        border-color: #fdb913;
-
-        &:before {
-          color: #fff;
-        }
-      }
-    }
-
-    .slick-prev {
-      left: 20px;
-
-      &:before {
-        content: url("../images/about-us/slick-prev.svg");
-      }
-    }
-
-    .slick-next {
-      right: 20px;
-
-      &:before {
-        content: url("../images/about-us/slick-next.svg");
-      }
-    }
-
-    @media (max-width: 900px) {
-      .slick-prev {
-        left: -22px;
-      }
-
-      .slick-next {
-        right: -22px;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      .slick-prev,
-      .slick-next {
-        width: 32px;
-        height: 32px;
-
-        &:before {
-          font-size: 1.2rem;
-        }
-
-        left: -16px;
-        right: -16px;
-      }
-    }
-  }
-
-  @media (max-width: 992px) {
-    padding-bottom: 50px;
-  }
-}
-
-.journey-carousel .slick-slide:not(.slick-center) .journey-card-img {
-  // opacity: 0.75;
-  // filter: blur(0px) grayscale(0%);
-  // transform: scale(0.93);
-  transition: transform 0.35s, opacity 0.22s;
-}
-
-.journey-carousel {
-  .slick-slide {
-    position: relative;
-
-    .journey-card-img {
-      position: relative;
-      z-index: 1;
-      transition: box-shadow 0.2s;
-    }
-  }
-}
-
-.journey-carousel .slick-slide:not(.slick-center):not(.slick-active) .journey-card-img::after {
-  /* Không làm gì với slide không visible */
-  display: none;
-}
-
-// Card overlay mờ
-.journey-carousel .slick-slide .journey-card {
-  position: relative;
-  border-radius: 2rem;
-  overflow: hidden;
-  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.22s;
-}
-
-.journey-carousel .slick-slide.is-blur .journey-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 20, 20, 0.46);
-  border-radius: inherit;
-  z-index: 3;
-  pointer-events: none;
-  transition: background 0.3s;
-}
-
-.journey-carousel .slick-slide .journey-card-img {
-  width: 100%;
-}
-
-// Card center (slide giữa) phóng to
-.journey-carousel .slick-center .journey-card {
-  transform: scale(1.13);
-  z-index: 2;
-  box-shadow: 0 8px 32px 0 rgba(30, 30, 30, 0.19);
-}
-
-
-
 .offer-full-section {
   background: #fff;
   padding: 0;
@@ -5397,7 +5200,6 @@ section {
   .offer-box {
     background: #f8f4e6;
     border-radius: 2rem;
-    box-shadow: 0 4px 22px 0 rgba(100, 80, 30, 0.07);
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
@@ -5560,7 +5362,6 @@ section {
   background: #f8f4e6;
   border-radius: 2rem;
   min-height: 100%;
-  box-shadow: 0 4px 22px 0 rgba(100, 80, 30, 0.07);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5592,7 +5393,6 @@ section {
 
 /* Responsive tối ưu mobile */
 @media (max-width: 992px) {
-
   .extrim-img-wrapper,
   .extrim-img-wrapper .extrim-img {
     min-height: 200px;
@@ -5655,10 +5455,15 @@ section {
 
 .faq-inspire-section {
   background: #fff url("../images/about-us/bg-faq-inspire.jpg") no-repeat bottom;
+  background-size: 100%;
   position: relative;
   z-index: 1;
   padding-top: 60px;
   min-height: 800px;
+  @media (max-width: 992px) {
+    padding-top: 30px;
+    padding-bottom: 180px;
+  }
 }
 
 .faq-title {
@@ -5712,7 +5517,6 @@ section {
   }
 
   @media (max-width: 768px) {
-
     .faq-bg-mountain,
     .faq-bg-runner {
       width: 65vw !important;
@@ -5821,5 +5625,172 @@ section {
 
   .faq-bottom-quote {
     font-size: 0.98rem;
+  }
+}
+
+.slick-section {
+  padding: 0 25px 300px;
+  text-align: center;
+  overflow: hidden;
+  background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom / cover
+    no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    span {
+      color: #fdb913;
+    }
+  }
+
+  p {
+    margin-bottom: 100px;
+    font-size: 20px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    z-index: 999;
+  }
+
+  .slick-prev {
+    left: 20px;
+
+    &:before {
+      content: url("../images/about-us/slick-prev.svg");
+    }
+  }
+
+  .slick-next {
+    right: 20px;
+
+    &:before {
+      content: url("../images/about-us/slick-next.svg");
+    }
+  }
+
+  .slick-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25px;
+      width: 269px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      @media (max-width: 1700px) {
+        width: 206px;
+      }
+      @media (max-width: 1368px) {
+        width: 135px;
+      }
+      @media (max-width: 1366px) {
+        width: 131px;
+      }
+      @media (max-width: 1180px) {
+        width: 84px;
+      }
+      @media (max-width: 1024px) {
+        width: 48px;
+      }
+      @media (max-width: 912px) {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -25px;
+      width: 186px;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      @media (max-width: 912px) {
+        display: none;
+      }
+    }
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-track {
+    left: -190px;
+    @media (max-width: 992px) {
+      left: 0;
+    }
+  }
+
+  .slick-slide {
+    aspect-ratio: 3/4; /* Hoặc 4/5, 2/3, 16/9 tuỳ mục đích */
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      transition: transform 0.3s ease-in-out;
+      margin: 0 auto;
+    }
+  }
+
+  .slick-wrap {
+    margin: 0 -10px;
+
+    .slick-item {
+      padding: 0 30px;
+
+      &.slick-center {
+        img {
+          transform: scale(1.2);
+          transition: transform 0.3s ease-in-out;
+          object-fit: cover;
+        }
+      }
+    }
+
+    h2 {
+      background-color: #f0f0f0;
+      padding: 80px 0;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 0 15px 200px;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 90px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 40px;
+      height: 40px;
+    }
   }
 }

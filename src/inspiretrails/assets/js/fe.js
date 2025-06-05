@@ -483,38 +483,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  var $carousel = $('.journey-carousel');
-  function updateBlurSlides() {
-    var $slides = $carousel.find('.slick-slide.slick-active');
-    $carousel.find('.slick-slide').removeClass('is-blur');
-    // Chỉ làm mờ nếu đang hiện 3 hình trở lên (center mode)
-    if ($slides.length >= 3) {
-      $slides.first().addClass('is-blur');
-      $slides.last().addClass('is-blur');
-    }
-  }
-
-  $carousel.on('afterChange', updateBlurSlides);
-  $carousel.on('init', updateBlurSlides);
-
-  $carousel.slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerPadding: '60px',
-    arrows: true,
-    infinite: true,
-    centerMode: true,
-    variableWidth: false,
-    responsive: [
-      { breakpoint: 900, settings: { slidesToShow: 2, centerMode: false } },
-      { breakpoint: 600, settings: { slidesToShow: 1, centerMode: false } }
-    ]
-  });
-});
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.faq-inspire-section .faq-question').forEach(btn => {
@@ -536,5 +504,52 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
+document.addEventListener("DOMContentLoaded", function () {
+  $('.slick-wrap').on('init', function (event, slick) {
+    var dots = $('.slick-dots li');
+    console.log('SRANZAN VEE');
+    dots.each(function (k, v) {
+      $(this).find('button').addClass('heading' + k);
+    });
+    var items = slick.$slides;
+    items.each(function (k, v) {
+      var text = $(this).find('h2').text();
+      $('.heading' + k).text(text);
+    });
+  });
+  $('.slick-wrap').slick({
+    focusOnSelect: true,
+    infinite: true,
+    arrows: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '10px',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+});

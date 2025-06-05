@@ -28,7 +28,7 @@
     </section>
 
 
-    <section class="section-journey-mark">
+    <!-- <section class="section-journey-mark">
         <div class="container-fluid">
             <h2 class="text-center mb-5">
                 <span class="journey-highlight">DẤU ẤN CHO</span> HÀNH TRÌNH CỦA BẠN
@@ -37,35 +37,76 @@
                 Mình chưng thu nhỏ cho mỗi hành trình bạn đã hoàn thành cùng Inspire Trails – nơi từng bước chân ghi dấu sự bền bỉ, khám phá và kết nối với thiên nhiên. Gọn nhẹ trong ví, thẻ không chỉ là kỷ vật ý nghĩa mà còn là người bạn đồng hành thầm lặng, kể lại những cung đường bạn đã vượt qua và truyền cảm hứng đến những người bạn gặp trên đường. Đặc biệt, thẻ còn mở khóa hệ sinh thái ưu đãi từ các đối tác của Inspire Trails – dành riêng cho những người thực sự đã bước ra khỏi phố thị, và bắt đầu sống lành theo cách của riêng mình.
             </div>
             <div class="journey-carousel slick-carousel">
-                <!-- Slide 1 -->
                 <div>
                     <div class="journey-card">
                         <img src="assets/images/about-us/img1.png" alt="Hành trình 1" class="journey-card-img" />
                     </div>
                 </div>
-                <!-- Slide 2 -->
                 <div>
                     <div class="journey-card">
                         <img src="assets/images/about-us/img2.png" alt="Hành trình 2" class="journey-card-img" />
                     </div>
                 </div>
-                <!-- Slide 3 -->
                 <div>
                     <div class="journey-card">
                         <img src="assets/images/about-us/img3.png" alt="Hành trình 3" class="journey-card-img" />
                     </div>
                 </div>
-                <!-- Slide 4 -->
                 <div>
                     <div class="journey-card">
                         <img src="assets/images/about-us/img4.png" alt="Hành trình 4" class="journey-card-img" />
                     </div>
                 </div>
-                <!-- Slide 5 -->
                 <div>
                     <div class="journey-card">
                         <img src="assets/images/about-us/img5.png" alt="Hành trình 5" class="journey-card-img" />
                     </div>
+                </div>
+                <div>
+                    <div class="journey-card">
+                        <img src="assets/images/about-us/img1.png" alt="Hành trình 5" class="journey-card-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="slick-section">
+        <h2>
+            <span>DẤU ẤN CHO</span> HÀNH TRÌNH CỦA BẠN
+        </h2>
+        <p class="text-center mx-auto" style="max-width: 900px;">
+            Mình chưng thu nhỏ cho mỗi hành trình bạn đã hoàn thành cùng Inspire Trails – nơi từng bước chân ghi dấu sự bền bỉ, khám phá và kết nối với thiên nhiên. Gọn nhẹ trong ví, thẻ không chỉ là kỷ vật ý nghĩa mà còn là người bạn đồng hành thầm lặng, kể lại những cung đường bạn đã vượt qua và truyền cảm hứng đến những người bạn gặp trên đường. Đặc biệt, thẻ còn mở khóa hệ sinh thái ưu đãi từ các đối tác của Inspire Trails – dành riêng cho những người thực sự đã bước ra khỏi phố thị, và bắt đầu sống lành theo cách của riêng mình.
+        </p>
+        <div class="slick-container">
+            <div class="slick-wrap">
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img1.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img2.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img3.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img4.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img5.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img1.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img2.png" alt="Hành trình 1" class="journey-card-img" />
+                </div>
+                <div class="slick-item">
+                    <img src="assets/images/about-us/img3.png" alt="Hành trình 1" class="journey-card-img" />
                 </div>
             </div>
         </div>
