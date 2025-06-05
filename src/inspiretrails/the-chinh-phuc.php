@@ -7,9 +7,9 @@
     <?php include('header.php'); ?>
 
     <section class="banner-conquer-card d-flex align-items-center justify-content-center position-relative">
-        <div class="banner-title text-center w-100">
+        <!-- <div class="banner-title text-center w-100">
             Thẻ Chinh Phục
-        </div>
+        </div> -->
         <!-- Social icons -->
         <div class="banner-social">
             <a href="#" aria-label="Facebook">
@@ -24,52 +24,8 @@
             <span class="banner-divider"></span>
         </div>
         <!-- Bottom torn edge PNG (background) -->
-        <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="Torn Edge">
+        <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="banner thẻ chinh phục" />
     </section>
-
-
-    <!-- <section class="section-journey-mark">
-        <div class="container-fluid">
-            <h2 class="text-center mb-5">
-                <span class="journey-highlight">DẤU ẤN CHO</span> HÀNH TRÌNH CỦA BẠN
-            </h2>
-            <div class="journey-desc text-center mx-auto mb-4" style="max-width: 900px;">
-                Mình chưng thu nhỏ cho mỗi hành trình bạn đã hoàn thành cùng Inspire Trails – nơi từng bước chân ghi dấu sự bền bỉ, khám phá và kết nối với thiên nhiên. Gọn nhẹ trong ví, thẻ không chỉ là kỷ vật ý nghĩa mà còn là người bạn đồng hành thầm lặng, kể lại những cung đường bạn đã vượt qua và truyền cảm hứng đến những người bạn gặp trên đường. Đặc biệt, thẻ còn mở khóa hệ sinh thái ưu đãi từ các đối tác của Inspire Trails – dành riêng cho những người thực sự đã bước ra khỏi phố thị, và bắt đầu sống lành theo cách của riêng mình.
-            </div>
-            <div class="journey-carousel slick-carousel">
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img1.png" alt="Hành trình 1" class="journey-card-img" />
-                    </div>
-                </div>
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img2.png" alt="Hành trình 2" class="journey-card-img" />
-                    </div>
-                </div>
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img3.png" alt="Hành trình 3" class="journey-card-img" />
-                    </div>
-                </div>
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img4.png" alt="Hành trình 4" class="journey-card-img" />
-                    </div>
-                </div>
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img5.png" alt="Hành trình 5" class="journey-card-img" />
-                    </div>
-                </div>
-                <div>
-                    <div class="journey-card">
-                        <img src="assets/images/about-us/img1.png" alt="Hành trình 5" class="journey-card-img" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 
     <section class="slick-section">
