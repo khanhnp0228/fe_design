@@ -483,6 +483,58 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var $carousel = $('.journey-carousel');
+  function updateBlurSlides() {
+    var $slides = $carousel.find('.slick-slide.slick-active');
+    $carousel.find('.slick-slide').removeClass('is-blur');
+    // Chỉ làm mờ nếu đang hiện 3 hình trở lên (center mode)
+    if ($slides.length >= 3) {
+      $slides.first().addClass('is-blur');
+      $slides.last().addClass('is-blur');
+    }
+  }
+
+  $carousel.on('afterChange', updateBlurSlides);
+  $carousel.on('init', updateBlurSlides);
+
+  $carousel.slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerPadding: '60px',
+    arrows: true,
+    infinite: true,
+    centerMode: true,
+    variableWidth: false,
+    responsive: [
+      { breakpoint: 900, settings: { slidesToShow: 2, centerMode: false } },
+      { breakpoint: 600, settings: { slidesToShow: 1, centerMode: false } }
+    ]
+  });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.faq-inspire-section .faq-question').forEach(btn => {
+    btn.addEventListener('click', function () {
+      // Đóng tất cả
+      document.querySelectorAll('.faq-question').forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-expanded', 'false');
+        b.parentElement.querySelector('.faq-answer').classList.remove('show');
+        b.querySelector('.faq-icon').textContent = '+';
+      });
+      // Mở cái đang bấm
+      btn.classList.add('active');
+      btn.setAttribute('aria-expanded', 'true');
+      btn.parentElement.querySelector('.faq-answer').classList.add('show');
+      btn.querySelector('.faq-icon').textContent = '-';
+    });
+  });
+});
+
 
 
 
