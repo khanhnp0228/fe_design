@@ -6,10 +6,14 @@
 <body>
     <?php include('header.php'); ?>
 
-    <section class="banner-conquer-card d-flex align-items-center justify-content-center position-relative">
+    <section class="banner-conquer-card">
         <!-- <div class="banner-title text-center w-100">
             Thẻ Chinh Phục
         </div> -->
+
+        <img class="tags img-fluid" src="assets/images/about-us/tags.png" alt="tags thẻ chinh phục" />
+
+
         <!-- Social icons -->
         <div class="banner-social">
             <a href="#" aria-label="Facebook">
@@ -23,6 +27,7 @@
             </a>
             <span class="banner-divider"></span>
         </div>
+
         <!-- Bottom torn edge PNG (background) -->
         <!-- <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="banner thẻ chinh phục" /> -->
     </section>
