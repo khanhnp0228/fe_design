@@ -15,7 +15,7 @@
 
 
         <!-- Social icons -->
-        <div class="banner-social">
+        <!-- <div class="banner-social">
             <a href="#" aria-label="Facebook">
                 <img src="assets/images/about-us/fb-white.svg" alt="" width="24">
             </a>
@@ -26,7 +26,7 @@
                 <img src="assets/images/about-us/share.svg" alt="" width="24">
             </a>
             <span class="banner-divider"></span>
-        </div>
+        </div> -->
 
         <!-- Bottom torn edge PNG (background) -->
         <!-- <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="banner thẻ chinh phục" /> -->
