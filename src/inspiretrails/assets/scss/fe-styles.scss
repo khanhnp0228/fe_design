@@ -5080,15 +5080,29 @@ section {
 
 .banner-conquer-card {
   position: relative;
-  min-height: 50vh;
-  height: 110vh;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/about-us/torn-edge-bottom.png") no-repeat top center;
+  background-image: url("../images/about-us/bg-thechinhphuc.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
   margin-top: 88px;
+  padding-bottom: 0;
+
+  .tags {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    z-index: 5;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+
 
   .banner-title {
     color: #fdb913;
@@ -5127,27 +5141,24 @@ section {
     }
   }
 
-  .banner-torn-bottom {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 4;
-    pointer-events: none;
-    user-select: none;
-    object-fit: cover;
+  // .banner-torn-bottom {
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 100%;
+  //   z-index: 4;
+  //   pointer-events: none;
+  //   user-select: none;
+  //   object-fit: cover;
 
-    @media (max-width: 992px) {
-      bottom: 0;
-    }
-  }
+  //   @media (max-width: 992px) {
+  //     bottom: 0;
+  //   }
+  // }
 
-  @media (max-width: 1366px) {
-    height: auto;
-  }
 
   @media (max-width: 991.98px) {
-    margin-top: 60px;
+    height: 46vh;
 
     .banner-title {
       font-size: 2.3rem;
@@ -5155,12 +5166,16 @@ section {
 
     .banner-social {
       right: 3vw;
-      bottom: 2vw;
+      bottom: 10%;
     }
 
     .banner-divider {
       width: 22px;
     }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 60px;
   }
 
   @media (max-width: 576px) {
@@ -5818,9 +5833,7 @@ section {
     }
   }
 
-  @media (max-width: 576px) {
-    padding-top: 0;
-  }
+  @media (max-width: 576px) {}
 }
 
 .banner-landing-page {
