@@ -4542,15 +4542,21 @@ section {
 
 .faq-inspire-section {
   background: #fff url("../images/about-us/bg-faq-inspire.jpg") no-repeat bottom;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
   z-index: 1;
   padding-top: 60px;
-  min-height: 800px;
+  min-height: 880px;
 }
 @media (max-width: 992px) {
   .faq-inspire-section {
     padding-top: 30px;
+    padding-bottom: 310px;
+    background-size: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .faq-inspire-section {
     padding-bottom: 180px;
   }
 }
