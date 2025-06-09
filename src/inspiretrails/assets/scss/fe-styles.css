@@ -4181,11 +4181,14 @@ section {
 .banner-conquer-card {
   position: relative;
   min-height: 50vh;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../images/about-us/torn-edge-bottom.png") no-repeat top center;
+  background-size: cover;
+  margin-top: 88px;
 }
 .banner-conquer-card .banner-title {
   color: #fdb913;
@@ -4223,13 +4226,15 @@ section {
 .banner-conquer-card .banner-torn-bottom {
   position: absolute;
   left: 0;
-  bottom: -50px;
+  top: 0;
   width: 100%;
   z-index: 4;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   .banner-conquer-card .banner-torn-bottom {
@@ -4242,6 +4247,9 @@ section {
   }
 }
 @media (max-width: 991.98px) {
+  .banner-conquer-card {
+    margin-top: 60px;
+  }
   .banner-conquer-card .banner-title {
     font-size: 2.3rem;
   }
@@ -4263,7 +4271,7 @@ section {
   }
   .banner-conquer-card .banner-social {
     right: 2vw;
-    bottom: 1vw;
+    bottom: 60px;
   }
   .banner-conquer-card .banner-divider {
     width: 13px;
@@ -4691,7 +4699,7 @@ section {
   }
 }
 .slick-section {
-  padding: 0 25px 300px;
+  padding: 50px 25px 300px;
   text-align: center;
   overflow: hidden;
   background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom/cover no-repeat;
@@ -4838,7 +4846,7 @@ section {
 }
 @media (max-width: 992px) {
   .slick-section {
-    padding: 0 15px 200px;
+    padding: 50px 15px 200px;
   }
   .slick-section h2 {
     font-size: 1.5rem;
@@ -4852,6 +4860,11 @@ section {
   .slick-section .slick-next {
     width: 40px;
     height: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .slick-section {
+    padding-top: 0;
   }
 }
 

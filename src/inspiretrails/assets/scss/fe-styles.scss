@@ -5081,11 +5081,14 @@ section {
 .banner-conquer-card {
   position: relative;
   min-height: 50vh;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../images/about-us/torn-edge-bottom.png") no-repeat top center;
+  background-size: cover;
+  margin-top: 88px;
 
   .banner-title {
     color: #fdb913;
@@ -5127,11 +5130,12 @@ section {
   .banner-torn-bottom {
     position: absolute;
     left: 0;
-    bottom: -50px;
+    top: 0;
     width: 100%;
     z-index: 4;
     pointer-events: none;
     user-select: none;
+    object-fit: cover;
 
     @media (max-width: 992px) {
       bottom: 0;
@@ -5143,6 +5147,8 @@ section {
   }
 
   @media (max-width: 991.98px) {
+    margin-top: 60px;
+
     .banner-title {
       font-size: 2.3rem;
     }
@@ -5167,7 +5173,7 @@ section {
 
     .banner-social {
       right: 2vw;
-      bottom: 1vw;
+      bottom: 60px;
     }
 
     .banner-divider {
@@ -5631,7 +5637,7 @@ section {
 }
 
 .slick-section {
-  padding: 0 25px 300px;
+  padding: 50px 25px 300px;
   text-align: center;
   overflow: hidden;
   background: #fff url(../images/about-us/bg-journey-mark.jpg) bottom / cover no-repeat;
@@ -5788,7 +5794,7 @@ section {
   }
 
   @media (max-width: 992px) {
-    padding: 0 15px 200px;
+    padding: 50px 15px 200px;
 
     h2 {
       font-size: 1.5rem;
@@ -5805,6 +5811,10 @@ section {
       width: 40px;
       height: 40px;
     }
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 0;
   }
 }
 

@@ -24,7 +24,7 @@
             <span class="banner-divider"></span>
         </div>
         <!-- Bottom torn edge PNG (background) -->
-        <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="banner thẻ chinh phục" />
+        <!-- <img class="banner-torn-bottom" src="assets/images/about-us/torn-edge-bottom.png" alt="banner thẻ chinh phục" /> -->
     </section>
 
 
