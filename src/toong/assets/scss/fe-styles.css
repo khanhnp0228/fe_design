@@ -103,6 +103,7 @@ section {
   color: #fff;
   font-weight: 600;
   font-size: 53px;
+  line-height: 1.3em;
   margin-bottom: 50px;
 }
 @media (max-width: 1300px) {
@@ -546,7 +547,7 @@ section {
   padding: 0;
 }
 .section-order-gift ul li {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
 }
 
 .btn-buy-now {
@@ -582,6 +583,10 @@ section {
   position: absolute;
   right: 30px;
   top: 15px;
+}
+.section-fqa .faq-item .faq-answer ul {
+  list-style-type: disc;
+  padding-left: 25px;
 }
 .section-fqa .faq-forest {
   position: absolute;
