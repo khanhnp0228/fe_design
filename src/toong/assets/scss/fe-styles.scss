@@ -118,6 +118,7 @@ section {
     color: #fff;
     font-weight: 600;
     font-size: 53px;
+    line-height: 1.3em;
     margin-bottom: 50px;
 
     @media (max-width: 1300px) {
@@ -725,7 +726,7 @@ section {
 
   ul {
     li {
-      margin-bottom: 20px;
+      margin-bottom: 20px !important;
     }
   }
 }
@@ -767,6 +768,13 @@ section {
       position: absolute;
       right: 30px;
       top: 15px;
+    }
+
+    .faq-answer {
+      ul {
+        list-style-type: disc;
+        padding-left: 25px;
+      }
     }
   }
 
