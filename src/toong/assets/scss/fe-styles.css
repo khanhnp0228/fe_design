@@ -202,15 +202,7 @@ section {
 }
 .secion-di-rung-kieu-moi .section-slider .image-slider .swiper-button-next,
 .secion-di-rung-kieu-moi .section-slider .image-slider .swiper-button-prev {
-  width: 38px;
-  height: 38px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
-  color: #08564B;
-  transition: background-color 0.3s;
   top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
 }
 .secion-di-rung-kieu-moi .section-slider .image-slider .swiper-button-next {
   right: 20px;
