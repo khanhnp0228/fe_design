@@ -381,6 +381,23 @@
         <img src="assets/images/banner-special-board.jpg" alt="Banner Special Board" class="w-full" />
     </section>
 
+    <div class="relative w-full bg-[#01433f] overflow-hidden py-2">
+        <div id="marquee-auto" class="marquee flex items-center whitespace-nowrap">
+            <div class="marquee-content flex items-center">
+                <span class="text-white font-bold text-3xl mx-4">Tổ Ong Adventure</span>
+                <svg class="mx-4 inline-block" width="32" height="32" viewBox="0 0 32 32" fill="#FC8A2D">
+                    <polygon points="16,6 27,13 23,26 9,26 5,13" />
+                </svg>
+                <span class="text-white font-bold text-3xl mx-4">Tổ Ong Adventure</span>
+                <svg class="mx-4 inline-block" width="32" height="32" viewBox="0 0 32 32" fill="#FC8A2D">
+                    <polygon points="16,6 27,13 23,26 9,26 5,13" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
     <section class="section-bag-opening-process bg-[#fff]">
         <div class="wrapper bg-[#F1E5C3] rounded-[10px] md:rounded-[36px]">
             <div class="max-w-6xl mx-auto px-md-2">

@@ -116,3 +116,14 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+// Marquee auto-scroll functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const marquee = document.getElementById('marquee-auto');
+  const content = marquee.querySelector('.marquee-content');
+  // Nhân bản nội dung cho tới khi tổng chiều rộng > 2 lần viewport
+  while (marquee.scrollWidth < window.innerWidth * 2) {
+    marquee.appendChild(content.cloneNode(true));
+  }
+});
