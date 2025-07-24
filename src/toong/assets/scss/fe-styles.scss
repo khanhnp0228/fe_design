@@ -812,3 +812,24 @@ section {
 .animate-fadeInDown {
   animation: fadeInDown 0.45s cubic-bezier(.4, 0, .2, 1);
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  display: inline-flex;
+  min-width: 200%;
+  /* đủ dài để lặp */
+  animation: marquee 22s linear infinite;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}

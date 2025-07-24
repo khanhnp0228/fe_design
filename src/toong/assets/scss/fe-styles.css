@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "Tharon";
@@ -611,4 +612,22 @@ section {
 }
 .animate-fadeInDown {
   animation: fadeInDown 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee {
+  display: inline-flex;
+  min-width: 200%;
+  /* đủ dài để lặp */
+  animation: marquee 22s linear infinite;
+}
+.marquee:hover {
+  animation-play-state: paused;
 }/*# sourceMappingURL=fe-styles.css.map */
